@@ -2,13 +2,15 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
 /* 숨김 제목 및 숨김 컨텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
   position: absolute;
   width: 1px;
   height: 1px;
   overflow:hidden;
   margin: 0;
   clip-path: polygon(0 0, 0 0, 0 0);
+  clip:rect(0 0 0 0);
+  clip:rect(0,0,0,0);
 }
 
 body *, 
@@ -245,9 +247,31 @@ a{
 }
 
 .group1{
-  background: blueviolet;
-  width: 250px;
+  
 }
+.login{
+  background: radial-gradient(circle at right top, #e8852e, #ed552f);
+  background-color: #ed552f;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+.login-heading{
+  color: #ff0;
+}
+.user-email{
+  margin-bottom: 15px;
+  font-weight: 700;
+  /* font-size: 1.5rem; */
+  text-indent: 10px;
+}
+.login-form{
+  background-color:#fff
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+}
+
 
 .group2{
   background: lightgreen;
