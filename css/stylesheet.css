@@ -230,59 +230,112 @@ a{
   animation-duration: 3000ms;
   animation-fill-mode: forwards;
   /* position: absolute; */
-  
 }
 .main{
-  background: skyblue;
+  background: #fff;
   padding: 30px 15px;
   /* justify-content: space-between; */
   padding: 30px 15px;
   overflow: hidden;
   min-height: 450px;
 }
-
 .group {
   margin: 0 15px;
   float: left; 
 }
-
 .group1{
-  
-}
-.login{
-  background: radial-gradient(circle at right top, #e8852e, #ed552f);
-  background-color: #ed552f;
-  border-radius: 5px;
-  padding: 10px 10px 10px 10px;
-  box-shadow: 5px 5px 0 0 #aaa;
-}
-.login-heading{
-  color: #ff0;
-}
-.user-email{
-  margin-bottom: 15px;
-  font-weight: 700;
-  /* font-size: 1.5rem; */
-  text-indent: 10px;
-}
-.login-form{
-  background-color:#fff
-  border-radius: 5px 5px 0 0;
-  padding: 10px 10px 0 10px;
-  margin-top: 10px;
-}
+  width:250px;
 
-
+}
 .group2{
   background: lightgreen;
   width: 380px;
 }
-
 .group3{
   background: lightsalmon;
   width: 190px;
 }
+/* 로그인 */
+.login{
+  background: radial-gradient(circle at right top, #f4a930, #ef882d);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #cccccc;
+  padding: 15px 10px; 
+}
+.login-heading{
+  color: #ff0;
+  margin:0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.login-form{
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  
+}
+.login-form fieldset{
+  border: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+  border-bottom: 1px solid#ccc;
+  position: relative;
+}
+.login-form label{
+  display: inline-block;
+  width: 4em;
+}
 
+.user-email , .user-pw  {
+  margin-bottom: 5px;
+}
+.user-email *, .user-pw * {
+  vertical-align: middle;
+}
+.login-form input{
+  width: 90px;
+  height: 22px;
+  border: 1px solid #ccc;
+  padding: 1px 1px 1px 0.5em;
+}
+.login-member{
+  background: #fff;
+  padding: 2px 10px;
+  margin: 0;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-between;
+  letter-spacing: -1px; 
+}
+.login-member li{
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+}
+.login-member .icon-right-open::before{
+  color: #ef882d;
+}
+.login-member a {
+  display: block;
+  padding: 8px 0;
+}
+.btn-login {
+  width: 50px;
+  height: 50px;
+  padding: 0 5px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #ef882d;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .slogan {
   background: orange;
 }
