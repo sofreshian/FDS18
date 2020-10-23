@@ -358,6 +358,12 @@ a{
 .validation-list a:hover, .validation-list a:focus{
   color: lightcoral;
 }
+/* .clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+} */
+
 
 .slogan {
   background: orange;
