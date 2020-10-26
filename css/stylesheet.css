@@ -338,7 +338,6 @@ a{
 }
 /* 유효성 검사 배너 */
 .validation-list{
-  background-color: yellow;
   margin: 25px 0 0 0;
   list-style: none;
   padding-left: 0;
@@ -358,13 +357,117 @@ a{
 .validation-list a:hover, .validation-list a:focus{
   color: lightcoral;
 }
+
 /* .clearfix::after {
   content: '';
   display: block;
   clear: both;
 } */
+.term{
+  width: 250px;
+  height: 142px;
+  background:linear-gradient(to bottom, #eee, #ccc); 
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 5px;
+  position: relative;
+}
+.term-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+/* .odd, .even {
+  overflow: hidden;
+  background-color: skyblue;
+} */
+/* .even {
+  margin-top: 15px;
+} */
+/* .term-list {
+  margin: 15px 0 0 0;
+  background-color: #ffff00;
+}
+.term-list dd{
+  margin-left: 0;
+} */
+/* .clearfix{
+  content: "";
+  display: block;
+  clear: both;
+} */
 
-
+.term-list-thumbnail {
+  float: left;
+  /* position: relative; */
+  /* bottom: 20px;
+  right: 40px; */
+  background-color: lime;
+}
+.term-list-thumbnail img{
+  display: block;
+}
+.term-list-subject, .term-list-brief {
+  font-size: 14px;
+  color: #296897;
+  background-color:pink;
+  /* margin-righst: 60px; */
+  widows: 145px;
+  padding: 0;
+  float: right;
+}
+.term-list-subject{
+  color:#296897;
+}
+.term-list-brief{
+  line-height: 1.5;
+  float: right;
+  width: 140px;
+  background-color: orange;
+  margin-top: 5px; 
+}
+.term-list div:nth-child(even){
+  /* overflow: hidden; */
+}
+.term-list div:nth-child(even) .term-list-thumbnail{
+  float: left;
+}
+.term-list div:nth-child(even) .term-list-subject{
+  float: left;
+}
+.term-list div:nth-child(even) .term-list-brief{
+  float: left;
+}
+/* .even{
+  width: 250px;
+  height: 300px;
+}
+.even .term-list-thumbnail{
+  float: right;
+  margin-top: 18px;
+}
+.even .term-list-subject {
+  font-size: 14px;
+  color: #296897;
+  padding: 0;
+  float: left;
+}
+.even .term-list-brief{
+  float: left;
+  line-height: 1.2;
+  width: 136px;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.even .term-list-subject,
+.even .term-list-brief{
+  float: left;
+}
+.even .term-list-thumbnail{
+  float: right;
+} */
 .slogan {
   background: orange;
 }
