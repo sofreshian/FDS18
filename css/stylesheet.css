@@ -482,9 +482,9 @@ a{
   justify-content: space-between;
   
 }
-.search-form label{
+/* .search-form label{
 
-}
+} */
 .search-form [name="search"]{
   border: 1px solid #aaa;
   border-radius: 3px;
@@ -500,6 +500,76 @@ a{
   border-radius: 3px;
   height: 22px;
   padding: 0 10px;
+}
+
+.board{
+  background-color: yellow;
+  position: relative;
+  height: 200px;
+  margin-top: 20px;
+}
+.notice-list, .pds-list, .notice-more, .pds-more{
+  display: none;
+}
+.is-active .notice-list,
+.is-active .pds-list,
+.is-active .notice-more,
+.is-active .pds-more{
+  display: block;
+}
+
+.notice-list, .pds-list{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  background-color: skyblue;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+.notice-list li, 
+.pds-list li{
+  display: flex;
+  flex-flow: nowrap;
+  margin-bottom: 10px;
+}
+.notice-list a,
+.notice-list a{
+  /* flex-grow: 1; */
+  width: 100%;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.notice-more, 
+.pds-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: pink;
+  padding: 8px;
+}
+.notice-more::before, 
+.pds-more::before{
+  color: hsla(110, 50%, 30%, 1);
+}
+.tab {
+  float: left;
+  margin: 0;
+}
+.tab a{
+  display: block;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #aaa;
+  background-color: #ccc, linear-gradient(#ccc, #eee);
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 15px 10px;;
+}
+.is-active .tab a{
+  color: #f00;
+  color: orange;
+  background-color: #fff;
 }
 
 .slogan {
