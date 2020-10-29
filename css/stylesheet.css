@@ -660,75 +660,80 @@ a{
   color: hsla(110, 50%, 30%, 1);
 }
 /* 신규이벤트 및 관련사이트 */
-.gradient-box{
-  background: linear-gradient(to bottom, #ccc, #eee);
-  background-color: #ccc;
+.gradient-box {
+  background: #ccc linear-gradient(#ccc, #eee);
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 10px;
 }
 .event {
-  /* background: lightskyblue; */
-  width: 168px;
   position: relative;
+  border-bottom: 1px solid #aaa;
 }
-.event-heading{
-  /* background-color: pink; */
+.related {
+  padding-top: 10px;
 }
-.point-color{
+.event-heading,
+.related-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+.point-color {
   color: #ed702d;
 }
-.event-thumbnail {
-  margin: 10px 0 10px 0;
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #aaa;
 }
-.event-thumbnail img{
-  /* background-color: yellow; */
-  border: 1px solid grey;
-  box-shadow: 5px 5px 0 0 #999;
-}
-.event-brief{
-  /* background-color: lime; */
-  border-bottom: 1px solid gray;
-  padding-bottom: 5px;
+.event-brief {
   line-height: 1.5;
 }
 .event-brief em {
   font-style: normal;
 }
-.btn-event{
-  width: 55px;
+.btn-event {
   position: absolute;
   top: 0;
   right: 0;
 }
+
 .btn-prev,
-.btn-next{
+.btn-next {
+  box-sizing: border-box;
+  border: 0;
+  overflow: hidden;
+  height: 18px;
+  padding: 18px 0 0;
+  width: 19px;
   background: transparent url(./images/back_forward.png) 0 0 no-repeat;
-  width: 19px;
-  height: 19px;
-  border: 0;
-  padding: 18px 0 0 0;
-  overflow: hidden;
-}
-.btn-next{
-  background-position: -36px 0;
-}
-/* .btn-prev{
-  width: 19px;
-  height: 0;
-  border: 0;
-  padding: 18px 0 0 0;
-  overflow: hidden;
-  background: url("images/back_forward.png") no-repeat;
 }
 .btn-next {
-  width: 19px;
-  height: 0;
-  border: 0;
-  padding: 18px 0 0 0;
+  background-position: -36px 0;
+}
+.related-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  background-color: #fff;
+  height: 27px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
   overflow: hidden;
-  background: url("images/back_forward.png") no-repeat right top;
-} */
+  transition: height 400ms, padding 400ms 400ms;
+}
+.related-list:hover {
+  height: 147px;
+  padding: 10px 0;
+}
+.related-list li {
+  padding: 2px 5px 3px 5px;
+}
+.related-list a {
+  display: block;
+  line-height: 20px;
+  padding-left: 20px;
+}
 .slogan {
   background: orange;
 }
