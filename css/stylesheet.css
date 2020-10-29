@@ -252,7 +252,7 @@ a{
   width: 380px;
 }
 .group3{
-  background: lightsalmon;
+  /* background: lightsalmon; */
   width: 190px;
 }
 /* 로그인 */
@@ -659,6 +659,76 @@ a{
 .news-more::before {
   color: hsla(110, 50%, 30%, 1);
 }
+/* 신규이벤트 및 관련사이트 */
+.gradient-box{
+  background: linear-gradient(to bottom, #ccc, #eee);
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+.event {
+  /* background: lightskyblue; */
+  width: 168px;
+  position: relative;
+}
+.event-heading{
+  /* background-color: pink; */
+}
+.point-color{
+  color: #ed702d;
+}
+.event-thumbnail {
+  margin: 10px 0 10px 0;
+}
+.event-thumbnail img{
+  /* background-color: yellow; */
+  border: 1px solid grey;
+  box-shadow: 5px 5px 0 0 #999;
+}
+.event-brief{
+  /* background-color: lime; */
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+  line-height: 1.5;
+}
+.event-brief em {
+  font-style: normal;
+}
+.btn-event{
+  width: 55px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-prev,
+.btn-next{
+  background: transparent url(./images/back_forward.png) 0 0 no-repeat;
+  width: 19px;
+  height: 19px;
+  border: 0;
+  padding: 18px 0 0 0;
+  overflow: hidden;
+}
+.btn-next{
+  background-position: -36px 0;
+}
+/* .btn-prev{
+  width: 19px;
+  height: 0;
+  border: 0;
+  padding: 18px 0 0 0;
+  overflow: hidden;
+  background: url("images/back_forward.png") no-repeat;
+}
+.btn-next {
+  width: 19px;
+  height: 0;
+  border: 0;
+  padding: 18px 0 0 0;
+  overflow: hidden;
+  background: url("images/back_forward.png") no-repeat right top;
+} */
 .slogan {
   background: orange;
 }
