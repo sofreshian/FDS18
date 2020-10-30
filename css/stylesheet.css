@@ -675,7 +675,7 @@ a{
 }
 .event-heading,
 .related-heading {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
 }
@@ -733,6 +733,75 @@ a{
   display: block;
   line-height: 20px;
   padding-left: 20px;
+}
+.favorite {
+  margin-top: 20px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  position: relative;
+}
+.favorite-heading{
+  padding-left: 5px;
+  font-size: 1.5rem;
+}
+.point-color{
+  color: #ed702d;
+  font-size: 1.5rem;
+}
+.favorite-list * ::before{
+  content: counter(number);
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #999;
+  padding: 0 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.favorite-list{
+  list-style: none;
+  padding-left: 10px;
+  counter-reset: number;
+}
+.favorite-list li{
+  margin-bottom: 5px;
+  counter-increment: number;
+  margin-top: 8px;
+  position: relative;
+}
+.favorite-list a{
+  /* background-color: aqua; */
+  /* margin-right: 5px;
+  flex-grow: 1; */
+  display: block;
+}
+.up, .down, .stop{
+  background: url("./images/rank.png") no-repeat;
+  width: 9px;
+  height: 0;
+  padding-top: 11px;
+  margin-right: 10px;
+  margin-top: -14px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  /* transform: translateX(50%); */
+  
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+.favorite-more{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+.favorite-more::before{
+  color: hsla(110, 50%, 30%, 1);
 }
 .slogan {
   background: orange;
