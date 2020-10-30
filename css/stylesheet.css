@@ -26,7 +26,7 @@ body{
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 1.4rem;
   color: #181818;
-  background: #ccc linear-gradient(#ccc 0%, #eee 35%,
+  background: url(./images/bg_flower.png) no-repeat 50% 0, #ccc linear-gradient(#ccc 0%, #eee 35%,
   #fff 60%, #fff 100%);
 }
 /* 링크 스타일 */
@@ -36,8 +36,25 @@ a{
   
 }
 /* 스킵 네비게이션 */
-.skip-nav{
-  display: none;
+.skip-nav a{
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  /* padding: 10px 0; */
+  text-align: center;
+  z-index: 10;
+  
+}
+.skip-nav:focus{
+  display: block;
+  padding: 10px 0;
+  height: auto;
 }
 
 /* 레이아웃 */
@@ -239,6 +256,7 @@ a{
   padding: 30px 15px;
   overflow: hidden;
   min-height: 450px;
+  border-radius: 5px 5px 0 0;
 }
 .group {
   margin: 0 15px;
@@ -857,4 +875,50 @@ a{
   background: #ccc linear-gradient(#ccc 0%, #eee 35%,
   #fff 60%, #fff 100%);
 }
-
+.footer-inner{
+  padding: 15px 100px 15px 180px;
+  position: relative;
+}
+/* 푸터 로고 */
+.footer-logo{
+  position: absolute;
+  top: 25px;
+  left: 35px;
+}
+/* 주소 및 저작권 */
+.address{
+  font-style: normal;
+  margin-top: 10px;
+}
+.address span{
+  margin-right: 15px;
+}
+.copyright {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+/* html, css로고 */
+.badge{
+  position: absolute;
+  top: 35px;
+  right: 15px;
+}
+/* 가이드 링크 목록 */
+.guide-list{
+  margin: 0;
+  padding: 2px 0 0 38px;
+  list-style: none;
+  background-color: #7b7b7b;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.guide-list li{
+  float: left;
+  margin: 0 5px;
+}
+.guide-list a{
+  display: block;
+  padding: 8px 10px;
+}
