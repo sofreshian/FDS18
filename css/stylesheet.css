@@ -921,4 +921,5 @@ a{
 .guide-list a{
   display: block;
   padding: 8px 10px;
+  text-transform: uppercase;
 }
